@@ -11,7 +11,7 @@ type SideBarItemProps = {
 
 const SideBarItem = ({ itemName, itemInfo, type, src }: SideBarItemProps) => {
   return (
-    <div className="flex items-center gap-4 rounded-md p-2 transition-colors duration-300 hover:bg-gray-800">
+    <div className="flex cursor-pointer items-center gap-4 rounded-md p-2 transition-colors duration-300 hover:bg-gray-800">
       <ItemImage variant={type} src={src} />
       <div className="flex flex-col">
         <span>{itemName}</span>

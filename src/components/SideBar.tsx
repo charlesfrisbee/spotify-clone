@@ -28,7 +28,7 @@ const SideBar = () => {
         </ul>
       </section>
       <section
-        className="flex-1 gap-4 rounded-md bg-slate-900/80 p-6"
+        className="flex-1 gap-4 overflow-hidden rounded-md bg-slate-900/80 p-6"
         id="main-part"
       >
         <header className="flex items-center justify-between gap-6">
@@ -45,13 +45,165 @@ const SideBar = () => {
           <Search className="h-4 w-5" />
           <Dropdown />
         </section>
-        <section className="flex flex-col">
+        <section className="flex max-h-full flex-col overflow-y-scroll">
           <SideBarItem
             itemName="Liked Songs"
             itemInfo="Playlist - 1379 songs"
             type="playlist"
             src={"https://misc.scdn.co/liked-songs/liked-songs-640.png"}
           />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />{" "}
           <SideBarItem
             itemName="3NIGMA"
             itemInfo="Artist"

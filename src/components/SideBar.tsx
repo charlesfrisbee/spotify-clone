@@ -2,6 +2,7 @@ import { ArrowRight, Home, Library, Plus, Search } from "lucide-react";
 import { Button } from "./ui/button";
 import { Dropdown } from "./DropDown";
 import SideBarItem from "./SideBarItem";
+import { ScrollArea } from "./ui/scroll-area";
 
 const topItems = [
   {
@@ -28,7 +29,7 @@ const SideBar = () => {
         </ul>
       </section>
       <section
-        className="flex-1 gap-4 overflow-hidden rounded-md bg-slate-900/80 p-6"
+        className="flex h-full flex-col overflow-hidden rounded-md bg-slate-900/80 pb-2 pl-6 pr-2 pt-6"
         id="main-part"
       >
         <header className="flex items-center justify-between gap-6">
@@ -45,7 +46,7 @@ const SideBar = () => {
           <Search className="h-4 w-5" />
           <Dropdown />
         </section>
-        <section className="flex max-h-full flex-col overflow-y-scroll">
+        <ScrollArea className="flex max-h-full flex-col">
           <SideBarItem
             itemName="Liked Songs"
             itemInfo="Playlist - 1379 songs"
@@ -53,6 +54,76 @@ const SideBar = () => {
             src={"https://misc.scdn.co/liked-songs/liked-songs-640.png"}
           />
           <SideBarItem
+            itemName="Your episodes"
+            itemInfo="Saved & downloaded episodes"
+            type="playlist"
+            src={"https://misc.scdn.co/your-episodes/SE-640.png"}
+          />
+          <SideBarItem
+            itemName="Radiolab"
+            itemInfo="Podcast - WNYC Studios"
+            type="playlist"
+            src={
+              "https://i.scdn.co/image/ab6765630000c3440f5e5d3a9892bdcedf2c72b6"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
             itemName="3NIGMA"
             itemInfo="Artist"
             type="artist"
@@ -75,135 +146,7 @@ const SideBar = () => {
             src={
               "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
             }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
-          <SideBarItem
-            itemName="3NIGMA"
-            itemInfo="Artist"
-            type="artist"
-            src={
-              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
-            }
-          />{" "}
+          />
           <SideBarItem
             itemName="3NIGMA"
             itemInfo="Artist"
@@ -212,7 +155,63 @@ const SideBar = () => {
               "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
             }
           />
-        </section>
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="3NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="2NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+          <SideBarItem
+            itemName="2NIGMA"
+            itemInfo="Artist"
+            type="artist"
+            src={
+              "https://i.scdn.co/image/ab6761610000a0005e2b010d47e2ae21dc564719"
+            }
+          />
+        </ScrollArea>
       </section>
     </div>
   );

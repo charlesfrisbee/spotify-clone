@@ -28,14 +28,14 @@ export interface ItemImageProps
     VariantProps<typeof itemImageVariants> {}
 
 const ItemImage = React.forwardRef<HTMLImageElement, ItemImageProps>(
-  ({ src, size, className, variant, ...props }, ref) => {
+  ({ src, size, alt, className, variant, ...props }, ref) => {
     return (
       <img
         src={src}
         className={cn(itemImageVariants({ variant, size, className }))}
         ref={ref}
         {...props}
-        alt="alt text"
+        alt={alt}
       />
     );
   }

@@ -1,3 +1,4 @@
+import DataTable from "./DataTable";
 import GridItem from "./GridItem";
 import ItemImage from "./ItemImage";
 import { ScrollArea } from "./ui/scroll-area";
@@ -21,6 +22,7 @@ const MainSection = () => {
             <GridItem />
             <GridItem />
           </div>
+          <DataTable />
         </ScrollArea>
       </div>
     </main>

@@ -8,6 +8,7 @@ const GridItem = () => {
         variant="playlist"
         size={"responsive"}
         className="aspect-sqaure w-full object-cover object-center"
+        alt="Darknet Diaries"
       />
       <p className="text-lg font-bold">Darknet Diaries</p>
       <p className="">Jack Rhysider</p>

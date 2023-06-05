@@ -16,8 +16,8 @@ const Home: NextPage = () => {
       </Head>
       <div className="flex bg-black text-white">
         <SideBar />
-        <main className="m-2 flex-1">
-          <div className=" h-full  rounded-md bg-gray-600 text-sm">
+        <main className="my-2 flex-1">
+          <div className=" h-full  rounded-md bg-slate-900/80 text-sm">
             Main section
           </div>
         </main>

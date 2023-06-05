@@ -17,7 +17,7 @@ const topItems = [
 
 const SideBar = () => {
   return (
-    <div className="flex h-screen w-2/12 min-w-fit flex-col gap-2 p-2 text-sm">
+    <div className="flex w-2/12 min-w-fit flex-col gap-2 p-2 text-sm">
       <section className="rounded-md bg-slate-900/80 p-5" id="top-part">
         <ul className=" flex flex-col gap-6 font-semibold">
           {topItems.map((item) => (

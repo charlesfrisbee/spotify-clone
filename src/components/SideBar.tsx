@@ -18,7 +18,7 @@ const topItems = [
 const SideBar = () => {
   return (
     <div className="flex w-2/12 min-w-fit flex-col gap-2 p-2 text-sm">
-      <section className="rounded-md bg-slate-900/80 p-5" id="top-part">
+      <section className="rounded-md bg-gray-600/30 p-5" id="top-part">
         <ul className=" flex flex-col gap-6 font-semibold">
           {topItems.map((item) => (
             <li className="flex items-center gap-4" key={item.text}>
@@ -29,7 +29,7 @@ const SideBar = () => {
         </ul>
       </section>
       <section
-        className="flex h-full flex-col overflow-hidden rounded-md bg-slate-900/80 pb-2 pl-2 pr-2 pt-4"
+        className="flex h-full flex-col overflow-hidden rounded-md bg-gray-600/30 pb-2 pl-2 pr-2 pt-4"
         id="main-part"
       >
         <header className="flex items-center justify-between gap-6 pl-2">

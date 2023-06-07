@@ -11,3 +11,14 @@ export type TrackData = {
     };
   }[];
 };
+
+type PlaylistItem = {
+  name: string;
+  id: string;
+  images: { url: string }[];
+};
+
+export type PlaylistData = {
+  href: string;
+  items: PlaylistItem[];
+};

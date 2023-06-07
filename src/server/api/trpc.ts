@@ -6,12 +6,14 @@
  * TL;DR - This is where all the tRPC server stuff is created and plugged in. The pieces you will
  * need to use are documented accordingly near the end.
  */
+import { type User } from "@clerk/clerk-sdk-node";
 import { initTRPC } from "@trpc/server";
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 import { type NextApiResponse, type NextApiRequest } from "next";
 import superjson from "superjson";
 import { ZodError } from "zod";
 import { prisma } from "~/server/db";
+import { getUser } from "~/utils/clerk";
 
 /**
  * 1. CONTEXT
@@ -24,6 +26,7 @@ import { prisma } from "~/server/db";
 type CreateContextOptions = {
   req: NextApiRequest;
   res?: NextApiResponse;
+  user?: User | null;
 };
 /**
  * This helper generates the "internals" for a tRPC context. If you need to use it, you can export
@@ -35,10 +38,11 @@ type CreateContextOptions = {
  *
  * @see https://create.t3.gg/en/usage/trpc#-serverapitrpcts
  */
-const createInnerTRPCContext = ({ req, res }: CreateContextOptions) => {
+const createInnerTRPCContext = ({ req, res, user }: CreateContextOptions) => {
   return {
     req,
     res,
+    user,
   };
 };
 
@@ -48,8 +52,10 @@ const createInnerTRPCContext = ({ req, res }: CreateContextOptions) => {
  *
  * @see https://trpc.io/docs/context
  */
-export const createTRPCContext = ({ req }: CreateNextContextOptions) => {
-  return createInnerTRPCContext({ req });
+export const createTRPCContext = async ({ req }: CreateNextContextOptions) => {
+  const user = await getUser(req);
+
+  return createInnerTRPCContext({ req, user });
 };
 
 /**

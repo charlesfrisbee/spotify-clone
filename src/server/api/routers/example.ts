@@ -20,7 +20,7 @@ export const exampleRouter = createTRPCRouter({
         }
       );
 
-      const data = await response.json();
+      const data: unknown = await response.json();
 
       console.log(data);
 

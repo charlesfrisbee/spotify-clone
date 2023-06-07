@@ -1,3 +1,4 @@
+import { useIntersectionObserver } from "~/hooks/useIntersectionObserver";
 import {
   Table,
   TableBody,
@@ -138,10 +139,12 @@ const invoices = [
 ];
 
 const DataTable = () => {
+  const [ref] = useIntersectionObserver();
+
   return (
     <Table>
       <TableCaption>A list of your recent invoices.</TableCaption>
-      <TableHeader>
+      <TableHeader ref={ref} className="sticky -top-[1px] transition-colors">
         <TableRow>
           <TableHead>Invoice</TableHead>
           <TableHead>Status</TableHead>
@@ -152,7 +155,7 @@ const DataTable = () => {
       <TableBody>
         {invoices.map((invoice) => (
           <TableRow
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer hover:bg-muted/50"
             // className="odd:bg-white even:bg-slate-50"
             key={invoice.invoice}
           >

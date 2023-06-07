@@ -1,4 +1,4 @@
-import { type TrackData } from "./types";
+import { type PlaylistData, type TrackData } from "./types";
 
 // Fetch Spotify token from Clerk API
 export const fetchSpotifyToken = async (url: string) => {
@@ -40,6 +40,18 @@ export const fetchTracks = async (url: string, token: string) => {
 
   if (data.length <= 0) {
     console.error("No tracks found in your Spotify history.");
+    return [];
+  }
+
+  return data;
+};
+
+export const fetchPlaylists = async (url: string, token: string) => {
+  const res = await fetch(`${url}?token=${token}`);
+  const data = (await res.json()) as PlaylistData[];
+
+  if (data.length <= 0) {
+    console.error("No playlists found in your Spotify history.");
     return [];
   }
 

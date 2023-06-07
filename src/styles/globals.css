@@ -80,6 +80,6 @@
   }
 
   .is-pinned {
-    @apply bg-gray-800;
+    @apply bg-gray-800 shadow-white;
   }
 }

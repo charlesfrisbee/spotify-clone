@@ -2,7 +2,7 @@ import { type AppType } from "next/app";
 import { ClerkProvider } from "@clerk/nextjs";
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
 
 const inter = Montserrat({
   subsets: ["latin"],

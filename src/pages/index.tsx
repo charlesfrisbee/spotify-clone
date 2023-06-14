@@ -3,7 +3,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import Header from "~/components/Header";
-import MainSection from "~/components/MainSection";
+import MainSection from "../components/MainSection";
 import SideBar from "~/components/SideBar";
 import { ScrollArea } from "~/components/ui/scroll-area";
 import { api } from "~/utils/api";
@@ -16,8 +16,6 @@ const Home: NextPage = () => {
   const { getToken } = useAuth();
 
   if (isLoading) return <div>Loading...</div>;
-
-  // get user object
 
   console.log(getToken().then((token) => console.log(token)));
 
@@ -37,4 +35,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-("dsd");
